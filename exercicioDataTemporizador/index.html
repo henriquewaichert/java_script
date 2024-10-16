@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Regressiva</title>
+    <style>
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black; 
+        }
+        #temporizador{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: black;
+            flex-direction: column;
+            font-weight: 600;
+        }
+
+        .tempo{
+            background-color: aliceblue;
+            margin: 50px;
+        }
+
+        #dias{
+            font-size: 50px;
+            margin: 10px;
+        }
+        #horas{
+            font-size: 40px;
+            margin: 10px;
+        }
+        #minutos{
+            font-size: 30px;
+            margin: 10px;
+        }
+        #segundos{
+            font-size: 20px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Contagem pra o Ano Novo</h1>
+    <div class="tempo">
+        <div id="temporizador">
+            <div id="dias"></div>
+            <div id="horas"></div>
+            <div id="minutos"></div>
+            <div id="segundos"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
