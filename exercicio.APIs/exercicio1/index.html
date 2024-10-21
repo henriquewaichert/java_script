@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busca de Usuários no GitHub</title>
+  <style>
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #7e7878;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      padding: 20px;
+      background-color: rgb(210, 210, 210);
+      box-shadow: 0 0 10px #26a036;
+      border-radius: 8px;
+    }
+
+    input {
+      width: calc(100% - 50px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #1e6300;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #00ff55;
+      border: 2;
+      cursor: pointer;
+      border-radius: 5px;
+      color: black;
+      font-weight: 550;
+      margin-top: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #7e1ebf;
+    }
+
+    .mensagemDeErro {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Buscar Usuários do GitHub</h2>
+    <input type="text" id="buscarInput" placeholder="Digite o nome de usuário..." />
+    <button onclick="buscarInput()">Buscar</button>
+    <ul id="usuarioLista"></ul>
+    <p id="mensagemErro" class="mensagemDeErro"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

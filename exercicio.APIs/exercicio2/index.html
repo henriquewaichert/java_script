@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed Social</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #eef2f3;
+            overflow-x: hidden;
+        }
+
+        button {
+            width: 100px;
+            height: 35px;
+            background-color: rgba(128, 128, 128, 0.756);
+            border-radius: 5px;
+            font-weight: 550;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .form-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 97%;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        textarea {
+            width: 95%;
+            height: 60px;
+            resize: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 10px;
+        }
+
+        .feedTwitter {
+            margin-top: 80px;
+            padding: 10px;
+        }
+
+        .post {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .post img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-top: 110px;
+        }
+
+        .like-button {
+            background-color: rgb(0, 162, 108);
+            color: white;
+            border: 2;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <textarea id="postarTexto" placeholder="O que você está pensando?"></textarea>
+        <button onclick="postarMensagem()">Postar</button>
+    </div>
+    <div class="feedTwitter" id="feedTwitter"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
